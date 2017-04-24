@@ -9,8 +9,7 @@
 #cMain {
 
   width: 1000px;
-  border: 1px solid #000;
+  border-bottom: 1px solid #999;
   margin: auto;
   margin-top: 20px; 
-  height: 820px;
 }

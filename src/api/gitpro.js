@@ -7,12 +7,12 @@ export function getUserData() {
 
   axios.get('https://api.github.com/users/cparker33').then(function (data) {
 
-  // console.log('user data ', data.data);
+  // console.log('user data ', data);
 
     store.dispatch({
 
       type: 'GET_USER_DATA',
-      action: data
+      action: data.data
       
     })
 
@@ -21,12 +21,13 @@ export function getUserData() {
 }
 
 
+// 
+
+
 export function getReposData() {
 
 
   axios.get('https://api.github.com/users/cparker33/repos').then(function (data) {
-
-  // console.log('user data ', data.data);
 
     store.dispatch({
 

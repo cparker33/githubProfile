@@ -1,0 +1,42 @@
+
+#cMidCont {
+  width: 720px;
+  margin-left: 280px;
+ 
+}
+.cMidTop {
+
+  width: 720px;
+  height: 50px;
+  border-bottom: 1px solid #999;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  line-height: 50px;
+  color: #444;
+}
+
+.cMidMid {
+  
+  width: 720px;
+  height: 50px;
+  border-bottom: 1px solid #999;
+}
+
+.cMidBot {
+  
+  width: 720px;
+}
+
+.repLi {
+border-bottom: 1px solid #999;
+}
+
+.repInp {
+
+ margin-top: 10px;
+ height: 20px;
+ width: 180px;
+ font-size: 16px; 
+}
+

@@ -12,7 +12,7 @@ constructor() {
     
     this.state = {
 
-      theClass: 'Closed',
+      userData: 'Closed',
       
     }
 
@@ -24,11 +24,13 @@ constructor() {
 
       const appState = store.getState()
 
-      console.log('Mount ', appState.userdata)  
+      const usrDat = appState.userdata
+
+      // console.log('usrDat ', usrDat)
 
       this.setState( {
 
-        // appItems: appState.cData[0].appetizers,
+        userData: usrDat,
         
       })
 
@@ -46,13 +48,16 @@ constructor() {
         <img
           id='cProfImg' 
           alt='CP'
-          src='https://avatars3.githubusercontent.com/u/25848922?v=3' />
+          src={this.state.userData.avatar_url} />
 
-        <h2>Caleb Parker</h2> 
+        <h2>{this.state.userData.name}</h2> 
 
-        <h3>cparker33</h3> 
+        <p
+          className='usrName'>
 
-        <a href='#'>Add a bio</a>
+          {this.state.userData.login}
+
+        </p> 
 
       </div>
 

@@ -4,6 +4,7 @@ import { getUserData } from '../api/gitpro'
 import { getReposData } from '../api/gitpro'
 
 import LeftCont from './LeftCont'
+import MidCont from './MidCont'
 
 
 
@@ -29,6 +30,7 @@ export default React.createClass({
           id='cMain'>
 
           <LeftCont />
+          <MidCont />
 
         </div>
 

@@ -2,7 +2,7 @@
 const InitState = {
 
   userdata: {},
-  reposdata: {}, 
+  reposdata: [], 
 
 }
 
@@ -10,28 +10,28 @@ const InitState = {
 export function cReducer (state = InitState, action) {
 
   // console.log('from reducer type ', action.type)
-  console.log('from reducer action ', action.action)
+  // console.log('from reducer action ', action.action)
 
 
   switch (action.type) {
 
-  case 'GET_USER_DATA':
+  case 'GET_REPOS_DATA': 
 
     return {
 
-      userdata: action.action,
-      reposdata: state.reposdata
+      userdata: state.userdata,
+      reposdata: action.action
 
     }
 
 
 
-    case 'GET_REPOS_DATA':
+    case 'GET_USER_DATA':
 
     return {
 
-      reposdata: action.data,
-      userdata: state.userdata
+      reposdata: state.reposdata,
+      userdata: action.action
     }
 
   default:
