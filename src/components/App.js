@@ -24,6 +24,27 @@ export default React.createClass({
 
         <div
           id='cTopBar'>
+
+          <div
+            className="topBarGit">
+            <i className="fa fa-github" aria-hidden="true"></i>
+          </div>
+
+          <input 
+            className='gitInp'
+            type='text'
+            placeholder='Search GitHub...'/>
+
+            <div
+              className='topBarMenuLft'>
+
+              <span className='tbmLItm'>Pull request</span>
+              <span className='tbmLItm'>Issues</span>
+              <span className='tbmLItm'>Gist</span>
+
+            </div>
+
+
         </div>
 
         <div

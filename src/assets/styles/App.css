@@ -1,10 +1,25 @@
 
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Open+Sans+Condensed:300")
+
+@import url("https://fonts.googleapis.com/css?family=Open+Sans")
+
+
+html {box-sizing: border-box;}
+
+*, *:before, *:after {box-sizing: inherit;}
+
+
 #cTopBar {
 
   background-color: #333;
   width: 100%;
   height: 60px;
+  display: flex;
+  flex-direction: row;
+  
 }
+
+
 
 #cMain {
 
@@ -12,4 +27,52 @@
   border-bottom: 1px solid #999;
   margin: auto;
   margin-top: 20px; 
+}
+
+.topBarGit {
+
+  margin-top: 5px;
+  margin-left: 50px;
+  height: 40px;
+  color: #888;
+  font-size: 40px;
+}
+
+.gitInp {
+
+  margin-top: 10px;
+  height: 30px;
+  width: 180px;
+  font-size: 16px; 
+  margin-left: 20px;
+  background-color: #888;
+  color: #EEE;
+  border: none;
+
+}
+
+::-webkit-input-placeholder { /* Chrome */
+  color: #555;
+}
+
+.topBarMenuLft {
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 230px;
+  height: 30px;
+  margin-top: 10px;
+  line-height: 30px;
+}
+
+.tbmLItm {
+
+color: #888;
+}
+
+.tbmLItm:hover {
+
+cursor: pointer;
+color: #EEE;
 }

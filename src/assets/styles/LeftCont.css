@@ -1,9 +1,11 @@
+
+
 #cLeftCont {
 
   border-bottom: 1px solid #999;
   width: 250px;
   height: 400px;
-  float: left
+  float: left;
 }
 
 #cProfImg {
@@ -12,8 +14,10 @@
   height: 250px;  
   
 }
-
           
 .usrName {
 
+  font-family: 'Open Sans Condensed', sans-serif;
+  margin-top: -20px;
+  font-size: 20px;
 }

@@ -59,6 +59,11 @@ constructor() {
 
         </p> 
 
+        <a href='#'>Add bio...</a>
+
+
+        <p><i className="fa fa-map-marker" aria-hidden="true"></i> {this.state.userData.location}</p>
+
       </div>
 
     )
